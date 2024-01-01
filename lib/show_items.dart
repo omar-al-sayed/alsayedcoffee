@@ -41,9 +41,7 @@ class _ShowItemsState extends State<ShowItems> {
       appBar: AppBar(
         title: const Text('Available Items'),
         centerTitle: true,
-      ),
-      drawer: CommonDrawer(),
-      body: _load
+      ), body: _load
           ? ListView.builder(
         itemCount: _items.length,
         itemBuilder: (context, index) {
