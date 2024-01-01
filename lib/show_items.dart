@@ -1,3 +1,4 @@
+import 'package:alsayed/common_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
@@ -41,6 +42,7 @@ class _ShowItemsState extends State<ShowItems> {
         title: const Text('Available Items'),
         centerTitle: true,
       ),
+      drawer: CommonDrawer(),
       body: _load
           ? ListView.builder(
         itemCount: _items.length,

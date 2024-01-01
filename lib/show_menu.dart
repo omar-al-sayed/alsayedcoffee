@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
 
+import 'common_drawer.dart';
+
 
 final List<Map<String, dynamic>> _menus = [];
 const String _baseURL = 'https://alsayedcoffee.000webhostapp.com/';
@@ -42,7 +44,7 @@ class _ShowMenusState extends State<ShowMenus> {
         title: const Text('Available Menus'),
         centerTitle: true,
       ),
-
+      drawer: CommonDrawer(),
       body: _load
           ? Center(
         child: Column(
